@@ -1,0 +1,8 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      sessions:
+        default:
+          goutte: ~
+        javascript:
+          selenium2:

@@ -6,7 +6,7 @@ use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 use Behat\Behat\Exception\PendingException;
 
-class FeatureContext implements Context, SnippetAcceptingContext
+class FeatureContext extends WebContext implements Context, SnippetAcceptingContext
 {
     private $output;
 
