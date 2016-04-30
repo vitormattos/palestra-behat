@@ -1,12 +1,9 @@
 <?php
-
+use Behat\Gherkin\Node\PyStringNode;
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
-use Behat\Behat\Exception\PendingException;
 
-class FeatureContext extends WebContext implements Context, SnippetAcceptingContext
+class CliContext implements Context, SnippetAcceptingContext
 {
     private $output;
 

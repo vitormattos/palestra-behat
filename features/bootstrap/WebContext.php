@@ -1,7 +1,9 @@
 <?php
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Mink\Exception\ElementNotFoundException;
-class WebContext extends MinkContext
+use Behat\Behat\Context\Context;
+use Behat\Behat\Context\SnippetAcceptingContext;
+class WebContext extends MinkContext implements Context, SnippetAcceptingContext
 {
     /**
      * Presses xpath
