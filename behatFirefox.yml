@@ -6,7 +6,7 @@ default:
           goutte: ~
         javascript:
           selenium2:
-            browser: 'phantonjs'
+            browser: 'firefox'
   suites:
     web:
       paths:    [ %paths.base%/features/web ]
