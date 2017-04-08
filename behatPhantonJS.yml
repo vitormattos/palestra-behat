@@ -11,9 +11,6 @@ default:
     web:
       paths:    [ %paths.base%/features/web ]
       contexts: [ WebContext ]
-    api:
-      paths:    [ %paths.base%/features/api ]
-      contexts: [ ApiContext ]
     cli:
       paths:    [ %paths.base%/features/cli ]
       contexts: [ CliContext ]

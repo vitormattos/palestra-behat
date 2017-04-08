@@ -4,9 +4,6 @@ default:
       sessions:
         default:
           goutte: ~
-        javascript:
-          selenium2:
-            browser: 'chrome'
   suites:
     web:
       paths:    [ %paths.base%/features/web ]
