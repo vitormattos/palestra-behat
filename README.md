@@ -1,8 +1,9 @@
 Behat Talk
 ==============
 
-Presentation:
-http://www.slideshare.net/vitormattosrj/bdd-php-behat
+Presentation: http://www.slideshare.net/vitormattosrj/bdd-php-behat
+
+Talk: https://www.youtube.com/watch?v=vwAp5teylF8
 
 ## Install
 ### Selenium
