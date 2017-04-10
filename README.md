@@ -36,7 +36,7 @@ sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/loca
 **Chrome**: Download the latest version of chromedriver
 (http://chromedriver.storage.googleapis.com/index.html)
 ```bash
-wget http://chromedriver.storage.googleapis.com/2.23/chromedriver_linux64.zip
+wget http://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/
 chmod +x /usr/bin/chromedriver
