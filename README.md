@@ -46,7 +46,7 @@ chmod +x /usr/bin/chromedriver
 ```
 
 **Running Standalone Selenium Server**
-```
+```bash
 java -jar ~/Downloads/selenium-server-standalone-2.53.1.jar
 ```
 
