@@ -18,8 +18,8 @@ server and download and install a firefox version with date less then the
 date of your selenium server. Before, install the latest version of
 geckodriver (https://github.com/mozilla/geckodriver/releases):
 ```bash
-wget https://github.com/mozilla/geckodriver/releases/download/v0.9.0/geckodriver-v0.9.0-linux64.tar.gz
-tar zxfv geckodriver-v0.9.0-linux64.tar.gz 
+wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz
+tar zxfv geckodriver-v0.18.0-linux64.tar.gz
 sudo mv geckodriver /usr/bin/
 chmod +x /usr/bin/geckodriver
 ```
@@ -39,7 +39,7 @@ sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/loca
 **Chrome**: Download the latest version of chromedriver
 (http://chromedriver.storage.googleapis.com/index.html)
 ```bash
-wget http://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip
+wget http://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/
 chmod +x /usr/bin/chromedriver
@@ -47,7 +47,7 @@ chmod +x /usr/bin/chromedriver
 
 **Running Standalone Selenium Server**
 ```bash
-java -jar ~/Downloads/selenium-server-standalone-2.53.1.jar
+java -jar ~/Downloads/selenium-server-standalone-3.4.0.jar
 ```
 
 ### Clone the project
@@ -71,11 +71,20 @@ php ../composer.phar install
 ```
 
 ## Running scenarios
-**phantonjs**
+### Headless browsers
+**goutte**
+Without JavaScript
 ```bash
-vendor/bin/behat -c behatphantonjs.yml -s web features/web/exemploselenium.feature
+vendor/bin/behat -c behatPhantonJS.yml -s web features/web/exemploselenium.feature
 ```
 
+**phantonjs**
+With JavaScript
+```bash
+vendor/bin/behat -c behatPhantonJS.yml -s web features/web/exemploselenium.feature
+```
+
+### Common browsers
 **Chrome**
 ```bash
 vendor/bin/behat -c behatChrome.yml -s web features/web/exemploSelenium.feature
