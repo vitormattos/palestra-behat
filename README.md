@@ -5,6 +5,7 @@ Behat Talk
   * https://www.slideshare.net/vitormattosrj/bdd-php-behat
   * https://www.slideshare.net/vitormattosrj/bdd-torne-viva-a-documentao-de-seus-sistemas
 * Talk:
+  * https://www.youtube.com/watch?v=QVZe7fQck8s
   * https://www.youtube.com/watch?v=vwAp5teylF8
   * https://www.facebook.com/agiletesters/videos/821450284675853/
 
