@@ -76,13 +76,13 @@ php ../composer.phar install
 **goutte**
 Without JavaScript
 ```bash
-vendor/bin/behat -c behatPhantonJS.yml -s web features/web/exemploselenium.feature
+vendor/bin/behat -c behatGoutte.yml -s web features/web/exemploSelenium.feature
 ```
 
 **phantonjs**
 With JavaScript
 ```bash
-vendor/bin/behat -c behatPhantonJS.yml -s web features/web/exemploselenium.feature
+vendor/bin/behat -c behatPhantonJS.yml -s web features/web/exemploSelenium.feature
 ```
 
 ### Common browsers
