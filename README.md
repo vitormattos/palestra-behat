@@ -27,8 +27,8 @@ chmod +x /usr/bin/geckodriver
 
 **PhantomJS**: Download PhantomJS from the oficial site
 (http://phantomjs.org/download.html). If you use `apt` for install
-PhantonJS, dont will work fine because the version from `apt` dont have 
-any dependencies to run all features required for integrate PhantonJS with
+PhantomJS, dont will work fine because the version from `apt` dont have 
+any dependencies to run all features required for integrate PhantomJS with
 Selenium. Example:
 ```bash
 wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
@@ -79,10 +79,10 @@ Without JavaScript
 vendor/bin/behat -c behatGoutte.yml -s web features/web/exemploSelenium.feature
 ```
 
-**phantonjs**
+**phantomjs**
 With JavaScript
 ```bash
-vendor/bin/behat -c behatPhantonJS.yml -s web features/web/exemploSelenium.feature
+vendor/bin/behat -c behatPhantomJS.yml -s web features/web/exemploSelenium.feature
 ```
 
 ### Common browsers
