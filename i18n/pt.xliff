@@ -1,0 +1,31 @@
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="global" source-language="en" target-language="pt" datatype="plaintext">
+    <header />
+    <body>
+        <trans-unit id="click-in-element">
+            <source><![CDATA[/^(?:|I )click in element "(?P<element>(?:[^"]|\\")*)"$/]]></source>
+            <target><![CDATA[/^(?:|Eu )clico no elemento "(?P<element>(?:[^"]|\\")*)"$/]]></target>
+        </trans-unit>
+        <trans-unit id="wait-for-text-to-appear">
+            <source><![CDATA[/^(?:|I )wait for text "(?P<text>(?:[^"]|\\")*)" to appear$/]]></source>
+            <target><![CDATA[/^(?:|Eu )espero o texto "(?P<text>(?:[^"]|\\")*)" aparecer$/]]></target>
+        </trans-unit>
+        <trans-unit id="wait-for-text-to-disappear">
+            <source><![CDATA[/^(?:|I )wait for text :text to disappear$/]]></source>
+            <target><![CDATA[/^(?:|Eu )espero o texto :text sumir$/]]></target>
+        </trans-unit>
+        <trans-unit id="wait-for-element-to-appear">
+            <source><![CDATA[/^(?:|I )wait for element "(?P<element>(?:[^"]|\\")*)" to appear$/]]></source>
+            <target><![CDATA[/^(?:|Eu )espero o elemento "(?P<element>(?:[^"]|\\")*)" aparecer$/]]></target>
+        </trans-unit>
+        <trans-unit id="wait-for-element-to-disappear">
+            <source><![CDATA[/^(?:|I )wait for element :element to disappear$/]]></source>
+            <target><![CDATA[/^(?:|Eu )espero o elemento :element sumir$/]]></target>
+        </trans-unit>
+        <trans-unit id="follow-the-route">
+            <source><![CDATA[/^(?:|I )follow the route "(?P<link>(?:[^"]|\\")*)"$/]]></source>
+            <target><![CDATA[/^(?:|Eu )sigo a rota "(?P<link>(?:[^"]|\\")*)"$/]]></target>
+        </trans-unit>
+    </body>
+  </file>
+</xliff>

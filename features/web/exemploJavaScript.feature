@@ -8,4 +8,4 @@ Funcionalidade: Busca na Wikipedia
     Dado vou para "http://pt.wikipedia.org"
     E preencho "search" com "Ada Lovelace"
     E pressiono "go"
-    E devo ver "Ada Augusta King"
+    Então espero o texto "primeira programadora" aparecer

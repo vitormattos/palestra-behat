@@ -1,17 +1,12 @@
 default:
   extensions:
+    DMore\ChromeExtension\Behat\ServiceContainer\ChromeExtension: ~
     Behat\MinkExtension:
+      browser_name: chrome
       sessions:
         default:
-          goutte: ~
-        javascript:
-          selenium2:
-            browser: 'chrome'
-            capabilities:
-              chrome:
-                switches:
-                  - "--headless"
-                  - "--disable-gpu"
+          chrome:
+            api_url: "http://localhost:9222"
   suites:
     web:
       paths:    [ %paths.base%/features/web ]
