@@ -56,15 +56,7 @@ java -jar ~/Downloads/selenium-server-standalone-3.4.0.jar
 git clone https://github.com/vitormattos/palestra-behat
 ```
 ### Get the Composer, the dependency manager for PHP
-```bash
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('SHA384', 'composer-setup.php') ===
-'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae')
-{ echo 'Installer verified'; } else { echo 'Installer corrupt';
-unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');
-```
+Download last composer phar from https://github.com/composer/composer/releases/latest or follow the install instructions in https://getcomposer.org/ or run `sudo apt install composer` in debian based linux.
 ### Install dependencies
 ```bash
 cd palestra-behat
