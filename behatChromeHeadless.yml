@@ -1,0 +1,21 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      sessions:
+        default:
+          goutte: ~
+        javascript:
+          selenium2:
+            browser: 'chrome'
+            capabilities:
+              chrome:
+                switches:
+                  - "--headless"
+                  - "--disable-gpu"
+  suites:
+    web:
+      paths:    [ %paths.base%/features/web ]
+      contexts: [ WebContext ]
+    cli:
+      paths:    [ %paths.base%/features/cli ]
+      contexts: [ CliContext ]
