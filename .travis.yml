@@ -8,11 +8,13 @@ addons:
     packages:
       - google-chrome-stable
 before_install:
-  # Setup display for Selenium
+  # Setup xvfb for Selenium
+  # Xvfb: X virtual frame buffer is X11 server which does graphical operation in
+  # memory, hence no output is displayed.
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
 before_script:
-  - apt-cache search firefox
+  - phantomjs --webdriver=4444
   # Start Chrome headless
   - google-chrome-stable --no-sandbox --no-first-run --disable-extensions --disable-gpu --headless --remote-debugging-port=9222 about:blank &>/dev/null &
   #- while ! curl http://localhost:9222 &>/dev/null; do sleep 1; done

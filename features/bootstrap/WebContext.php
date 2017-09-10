@@ -4,8 +4,22 @@ use Behat\Mink\Exception\ElementNotFoundException;
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Mink\Exception\ResponseTextException;
+use Behat\Behat\Hook\Scope\AfterScenarioScope;
 class WebContext extends MinkContext implements Context, SnippetAcceptingContext
 {
+    /**
+     * @ AfterScenario @javascript
+     * @param AfterScenarioScope $scope
+     */
+    public function screenshotOnFailure(AfterScenarioScope $scope)
+    {
+        if ($scope->getTestResult()->isPassed() === false) {
+            $imageData = $this->getSession()->getDriver()->getScreenshot();
+            $imagePath = time() . '.png';
+            file_put_contents($imagePath, $imageData);
+        }
+    }
+
     /**
      * Returns list of definition translation resources paths.
      *
