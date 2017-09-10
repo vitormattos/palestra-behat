@@ -6,7 +6,7 @@ default:
           goutte: ~
         javascript:
           selenium2:
-            browser: 'firefox'
+            browser: 'firefox-trunk'
   suites:
     web:
       paths:    [ %paths.base%/features/web ]
