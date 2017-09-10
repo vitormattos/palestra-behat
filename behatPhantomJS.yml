@@ -7,6 +7,7 @@ default:
         javascript:
           selenium2:
             browser: 'phantomjs'
+            wd_host: http://localhost:4445/wd/hub
   suites:
     web:
       paths:    [ %paths.base%/features/web ]
