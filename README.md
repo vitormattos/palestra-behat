@@ -15,7 +15,7 @@ Behat Talk
 Download the latest stable version of Selenium Server (http://www.seleniumhq.org/download/)
 
 **Firefox**: Check the release date of the downloaded version of Selenium
-server and download and install a firefox version with date less then the 
+server, download and install a firefox version with date less then the 
 date of your selenium server. Before, install the latest version of
 geckodriver (https://github.com/mozilla/geckodriver/releases):
 ```bash
@@ -27,7 +27,7 @@ chmod +x /usr/bin/geckodriver
 
 **PhantomJS**: Download PhantomJS from the oficial site
 (http://phantomjs.org/download.html). If you use `apt` for install
-PhantomJS, dont will work fine because the version from `apt` dont have 
+PhantomJS, will not work good because the version from `apt` dont have 
 any dependencies to run all features required for integrate PhantomJS with
 Selenium. Example:
 ```bash
@@ -67,24 +67,35 @@ php ../composer.phar install
 ## Running scenarios
 ### Headless browsers
 **goutte**
+
 Without JavaScript
+
 ```bash
 vendor/bin/behat -c behatGoutte.yml -s web features/web/exemploGoutte.feature
 ```
 
 **chrome headless**
+
 With JavaScript
+
+> OBS: Only supported by versions 59+ of chome or chromium
+
 First start chrome or chromium in headless mode
+
 ```bash
 google-chrome  --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222
 ```
+
 After start browser in headless mode, run scenario
+
 ```bash
 vendor/bin/behat -c behatChromeHeadless.yml -s web features/web/exemploJavaScript.feature
 ```
 
 **phantomjs**
+
 With JavaScript
+
 ```bash
 vendor/bin/behat -c behatPhantomJS.yml -s web features/web/exemploJavaScript.feature
 ```
