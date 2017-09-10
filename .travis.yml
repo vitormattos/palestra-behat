@@ -3,6 +3,7 @@ php:
   - 7.0
   - 7.1
 addons:
+  firefox: latest-nightly
   apt:
     packages:
       - google-chrome-stable
