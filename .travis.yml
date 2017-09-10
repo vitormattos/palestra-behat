@@ -19,3 +19,4 @@ before_script:
   - composer install
 script:
   - vendor/bin/behat -c behatGoutte.yml -s web features/web/exemploGoutte.feature
+  - vendor/bin/behat -c behatChromeHeadless.yml -s web features/web/exemploJavaScript.feature
