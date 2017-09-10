@@ -61,7 +61,7 @@ Download last composer phar from https://github.com/composer/composer/releases/l
 ### Install dependencies
 ```bash
 cd palestra-behat
-php ../composer.phar install
+composer install
 ```
 
 ## Running scenarios
@@ -97,6 +97,7 @@ vendor/bin/behat -c behatChromeHeadless.yml -s web features/web/exemploJavaScrip
 With JavaScript
 
 ```bash
+phantomjs --webdriver=4445
 vendor/bin/behat -c behatPhantomJS.yml -s web features/web/exemploJavaScript.feature
 ```
 
