@@ -9,7 +9,7 @@ addons:
       - google-chrome-stable
 before_script:
   # Start Chrome headless
-  - google-chrome-stable --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222
+  - google-chrome-stable --no-sandbox --no-first-run --disable-extensions --disable-gpu --headless --remote-debugging-port=9222
   - while ! curl http://localhost:9222 &>/dev/null; do sleep 1; done
   # Get and run Selenium
   - wget http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.0.jar -O selenium-server-standalone.jar
