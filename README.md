@@ -14,7 +14,9 @@ Behat Talk
 
 Download the latest stable version of Selenium Server (http://www.seleniumhq.org/download/)
 
-**Firefox**: Check the release date of the downloaded version of Selenium
+#### Firefox
+
+Check the release date of the downloaded version of Selenium
 server, download and install a firefox version with date less then the 
 date of your selenium server. Before, install the latest version of
 geckodriver (https://github.com/mozilla/geckodriver/releases):
@@ -25,7 +27,9 @@ sudo mv geckodriver /usr/bin/
 chmod +x /usr/bin/geckodriver
 ```
 
-**PhantomJS**: Download PhantomJS from the oficial site
+#### PhantomJS
+
+Download PhantomJS from the oficial site
 (http://phantomjs.org/download.html). If you use `apt` for install
 PhantomJS, will not work good because the version from `apt` dont have 
 any dependencies to run all features required for integrate PhantomJS with
@@ -37,7 +41,9 @@ sudo mv phantomjs-2.1.1-linux-x86_64 /usr/local/share/
 sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
 ```
 
-**Chrome**: Download the latest version of chromedriver
+#### Chrome
+
+Download the latest version of chromedriver
 (http://chromedriver.storage.googleapis.com/index.html)
 ```bash
 wget http://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip
@@ -66,7 +72,7 @@ composer install
 
 ## Running scenarios
 ### Headless browsers
-**goutte**
+#### Goutte
 
 Without JavaScript
 
@@ -74,7 +80,7 @@ Without JavaScript
 vendor/bin/behat -c behatGoutte.yml -s web features/web/exemploGoutte.feature
 ```
 
-**chrome headless**
+#### chrome headless
 
 With JavaScript
 
@@ -92,7 +98,7 @@ After start browser in headless mode, run scenario
 vendor/bin/behat -c behatChromeHeadless.yml -s web features/web/exemploJavaScript.feature
 ```
 
-**phantomjs**
+#### phantomjs
 
 With JavaScript
 
@@ -102,12 +108,12 @@ vendor/bin/behat -c behatPhantomJS.yml -s web features/web/exemploJavaScript.fea
 ```
 
 ### Common browsers
-**Chrome**
+#### Chrome
 ```bash
 vendor/bin/behat -c behatChrome.yml -s web features/web/exemploJavaScript.feature
 ```
 
-**Firefox**
+#### Firefox
 ```bash
 vendor/bin/behat -c behatFirefox.yml -s web features/web/exemploJavaScript.feature
 ```
