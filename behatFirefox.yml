@@ -6,11 +6,11 @@ default:
           goutte: ~
         javascript:
           selenium2:
-            browser: 'firefox-trunk'
+            browser: 'firefox'
   suites:
     web:
-      paths:    [ %paths.base%/features/web ]
+      paths:    [ features/web ]
       contexts: [ WebContext ]
     cli:
-      paths:    [ %paths.base%/features/cli ]
+      paths:    [ features/cli ]
       contexts: [ CliContext ]

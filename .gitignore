@@ -1,6 +1,5 @@
 # composer dir and files
 vendor
-composer.lock
 composer.phar
 
 # Eclipse

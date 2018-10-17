@@ -10,8 +10,8 @@ default:
             wd_host: http://localhost:4445/wd/hub
   suites:
     web:
-      paths:    [ %paths.base%/features/web ]
+      paths:    [ features/web ]
       contexts: [ WebContext ]
     cli:
-      paths:    [ %paths.base%/features/cli ]
+      paths:    [ features/cli ]
       contexts: [ CliContext ]
