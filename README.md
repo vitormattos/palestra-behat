@@ -21,8 +21,8 @@ server, download and install a firefox version with date less then the
 date of your selenium server. Before, install the latest version of
 geckodriver (https://github.com/mozilla/geckodriver/releases):
 ```bash
-wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
-tar zxfv geckodriver-v0.23.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+tar zxfv geckodriver-v0.24.0-linux64.tar.gz
 sudo mv geckodriver /usr/bin/
 chmod +x /usr/bin/geckodriver
 ```
@@ -46,7 +46,7 @@ sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/loca
 Download the latest version of chromedriver
 (http://chromedriver.storage.googleapis.com/index.html)
 ```bash
-wget http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/73.0.3683.20/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/
 chmod +x /usr/bin/chromedriver
@@ -89,7 +89,7 @@ With JavaScript
 First start chrome or chromium in headless mode
 
 ```bash
-google-chrome  --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222
+chromium  --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222
 ```
 
 After start browser in headless mode, run scenario
