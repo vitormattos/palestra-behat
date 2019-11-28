@@ -100,7 +100,7 @@ After start browser in headless mode, run scenario
 vendor/bin/behat -c behatChromeHeadless.yml -s web features/web/exemploJavaScript.feature
 ```
 
-#### phantomjs
+#### phantomjs - deprecated
 
 With JavaScript
 
