@@ -14,6 +14,8 @@ Behat Talk
 
 Download the latest stable version of Selenium Server (http://www.seleniumhq.org/download/)
 
+OBS: Use the version 3.13, the version 3.14 don't work
+
 #### Firefox
 
 Check the release date of the downloaded version of Selenium
@@ -46,7 +48,7 @@ sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/loca
 Download the latest version of chromedriver
 (http://chromedriver.storage.googleapis.com/index.html)
 ```bash
-wget https://chromedriver.storage.googleapis.com/73.0.3683.20/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/78.0.3904.105/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/
 chmod +x /usr/bin/chromedriver
@@ -55,7 +57,7 @@ chmod +x /usr/bin/chromedriver
 **Running Standalone Selenium Server**
 Only for Chrome, Firefox and PhantomJS
 ```bash
-java -jar ~/Downloads/selenium-server-standalone-3.14.0.jar
+java -jar ~/Downloads/selenium-server-standalone-3.13.0.jar
 ```
 
 ### Clone the project
